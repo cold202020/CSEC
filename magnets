@@ -1,0 +1,12 @@
+t = int(input())
+a = []
+b = 1
+for i in range(t):
+    n = int(input())
+    a.append(n)
+for i in range(len(a)-1):
+    if a[i] != a[i+1]:
+        b+= 1
+print(b)
+a.clear()
+b = 1
