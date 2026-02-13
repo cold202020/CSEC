@@ -1,0 +1,13 @@
+n = int(input())
+a = list(map(int,input().split()))
+b  =0
+c = 0
+for i in range((n + 1) // 2):
+  if n % 2 == 1 and len(a) == 1:
+    b+= sum(a)
+    break
+  b+= max(a[0],a[-1])
+  a.remove(max(a[0],a[-1]))
+  c+= max(a[0],a[-1])
+  a.remove(max(a[0],a[-1]))
+print(b,c)
