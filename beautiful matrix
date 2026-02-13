@@ -1,0 +1,6 @@
+for i in range(5):
+  a = list(map(int,input().split()))
+  if sum(a) == 1:
+    x = abs(i - 2)
+    y = abs(a.index(1) - 2)
+print(x + y)
