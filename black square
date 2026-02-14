@@ -1,0 +1,13 @@
+a,b,c,d = map(int,input().split())
+s = (input())
+n = 0
+for i in range(len(s)):
+    if int(s[i]) == 1:
+        n+= a
+    elif int(s[i]) == 2:
+        n+= b
+    elif int(s[i]) == 3:
+        n+= c
+    else:
+        n+= d
+print(n)
